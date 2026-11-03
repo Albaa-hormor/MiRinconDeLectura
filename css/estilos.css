@@ -121,17 +121,20 @@ nav a.activo {
     vertical-align: top;
     background-color: white;
     width: 170px;
-    min-height: 130px;
     margin: 8px;
     padding: 15px;
     border: 1px solid #c5d8eb;
     border-radius: 8px;
+    height: 250px;
 }
 
 .genero h3 {
     color: #263c59;
 }
 
+.icono-genero {
+    width: 100px;
+}
 
 /* ===================================
    RECOMENDACIÓN ESPECIAL
@@ -155,6 +158,14 @@ nav a.activo {
     font-style: italic;
     text-align: center;
     border-radius: 6px;
+}
+.fotoportada {
+    position: absolute;
+    top: 230px;
+    right: 20px;
+    width: 70px;
+    height: 250px;
+    object-fit: cover;
 }
 
 
