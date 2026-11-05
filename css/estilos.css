@@ -25,6 +25,10 @@ main {
 h2 {
     color: #263c59;
     font-size: 26px;
+    transition: color 0.5s;
+}
+h2:hover {
+    color:orange;
 }
 
 p {
@@ -116,7 +120,15 @@ nav a:focus {
     padding: 12px;
     margin: 10px;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 20px;
+    width: 120px;
+    transition: /*background-color 0.5s, color 0.5s, border-radius 5s,*/ width 5s;
+}
+.boton:hover {
+    background-color: red;
+    color: orange;
+    border-radius: 0px;
+    width: 180px;
 }
 .boton:active {
     background-color: #8e44ad;
@@ -171,6 +183,11 @@ nav a:focus {
 .portada {
     width: 130px;
     border-radius: 5px;
+    opacity: 1;
+    transition: opacity 5s;
+}
+.portada:hover {
+    opacity: 50%;
 }
 
 .cita {
@@ -215,6 +232,11 @@ nav a:focus {
     text-align: center;
     overflow: auto;
     height: 150px;
+    /*font-size: 20px;
+    padding: 1.5em;*/
+    border-color: #8e44ad;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 5s, border-color 5s, height 20s, box-shadow 5s;
 }
 
 .tarjeta h3 {
@@ -227,7 +249,12 @@ nav a:focus {
 .tarjeta:hover {
     border-radius: 15px;
     border: 2px solid orange;
+    background-color: yellow;
+    border-color: #e8f2fb;
+    height: 250px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
+
 
 
 /* ===================================
