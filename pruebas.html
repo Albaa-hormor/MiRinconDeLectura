@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*.contenedor {
+            display: flex;
+            gap: 10px;
+            position:relative;
+            background-color: grey;
+            height: 3000px;
+            margin: 200px;
+        }
+        .caja {
+            width: 120px;
+            height: 100px;
+            padding: 10px;
+            text-align: center;
+        }
+        .roja {
+            background-color: red;
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            z-index: 1;
+        }
+        .azul {
+            background-color: blue;
+            position: absolute;
+            top:10px;
+            right: 10px;
+        }
+        .verde {
+            background-color:chartreuse;
+            position: fixed;
+            bottom:20px;
+            right:20px;
+        }
+        .amarilla {
+            background-color: yellow;
+            position: sticky;
+            top: 0;
+        }*/
+        .contenedor {
+            display: flex;
+            gap: 10px;
+            position:relative;
+            background-color: grey;
+            height: 8000px;
+            margin: 200px;
+            
+        }
+        .caja {
+            width: 120px;
+            height: 100px;
+            padding: 10px;
+            text-align: center;
+        }
+        .roja {
+            background-color: red;
+
+        }
+        .azul {
+            background-color: blue;
+            position: relative;
+            bottom: 30px;
+            right: 40px;
+        }
+        .verde {
+            background-color: chartreuse;
+        }
+        .amarilla {
+            background-color: yellow;
+        }
+        .tarjeta {
+            position:relative;
+            width: 400px;
+            border: 1px solid gray;
+            height: 8000px;
+            
+        }
+        .tarjeta img {
+            width: 100%;
+            display: block;
+            position: sticky;
+            top:20px;
+
+        }
+        .oferta {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+            padding: 8px;
+            font-weight: bold;
+        }
+        .boton {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: aquamarine;
+            font-size: xx-large;
+            top: 50px;
+            
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja roja">Caja 1</div>
+        <div class="caja azul">Caja 2</div>
+        <div class="caja verde">Caja 3</div>
+        <div class="caja amarilla">Caja 4</div>
+    </div>
+    <div class="tarjeta">
+        <img src="img/harry-potter.jpg" alt="Producto en oferta">
+        <span class="oferta">OFERTA</span>
+    </div>
+    <a href="#" class="boton">Boton</a>
+</body>
+</html>

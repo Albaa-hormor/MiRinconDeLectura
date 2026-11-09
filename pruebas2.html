@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 80px;
+        gap: 10px;
+        }
+        .caja {
+            padding: 10px;
+            text-align: center;
+        }
+        .roja {
+            background-color: red;
+            
+
+        }
+        .azul {
+            background-color:aqua;
+        }
+        .verde {
+            background-color: chartreuse;
+        }
+        .amarilla {
+            background-color: yellow;
+            grid-column: span 2;
+        }
+        .rosa {
+            background-color: pink;
+            grid-row: span 2;
+        }
+        .morado {
+            background-color: purple;
+        }
+        .pagina {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-areas: 
+            "cabecera cabecera"
+            "contenido lateral"
+            "pie pie";
+            gap: 15px;
+        }
+        header {
+            grid-area: cabecera;
+            background-color: lightblue;
+        }
+        main {
+            grid-area: contnido;
+            background-color: lightgreen;
+            min-height: 100px;
+        }
+        aside {
+            grid-area: lateral;
+            background-color: lightyellow;
+        }
+        footer {
+            grid-area: pie;
+            background-color: lavender;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja roja">Caja 1 <img src="/img/harry-potter.jpg" alt="hp1"></div>
+        <div class="caja azul">Caja 2 <img src="/img/harry-potter.jpg" alt="hp2"></div>
+        <div class="caja verde">Caja 3 <img src="/img/historia-interminable.jpg" alt="historia1"></div>
+        <div class="caja amarilla">Caja 4 <img src="/img/historia-interminable.jpg" alt="historia2"></div>
+        <div class="caja rosa">Caja 5 <img src="/img/principito.jpg" alt="principito1"></div>
+        <div class="caja morado">Caja 6 <img src="/img/principito.jpg" alt="principito2"></div>
+    </div>
+    <div class="pagina">
+        <header>Cabecera</header>
+        <main>
+            <h2>Contenido principal</h2>
+            <p>Aquí apareceria el contenido de nuestra web</p>
+        </main>
+
+        <aside>
+            Barra Lateral
+        </aside>
+
+        <footer>
+            Pie de página
+        </footer>
+    </div>
+</body>
+</html>
